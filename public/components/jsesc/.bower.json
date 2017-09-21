@@ -1,0 +1,15 @@
+{
+  "name": "jsesc",
+  "homepage": "https://github.com/mathiasbynens/jsesc",
+  "version": "2.5.1",
+  "_release": "2.5.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.5.1",
+    "commit": "0a09aaa3390c6490242488ac5aedc32fad7a5afe"
+  },
+  "_source": "https://github.com/mathiasbynens/jsesc.git",
+  "_target": "^2.5.1",
+  "_originalSource": "jsesc",
+  "_direct": true
+}

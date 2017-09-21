@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+	  <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+    <div class="col-md-8 col-md-offset-2 veriSet shadowed text-center">
+		 <div id="verified">
+			 <h3>Thank You <small id="theName"></small></h3>
+			 <p>Your email address <strong id="theEmail"></strong> has been verified.</p>
+			 <p>Please contact your state secretariat to get your Membership</p>
+		 </div>
+		 <div id="NTneed">
+			 <h3>Sorry <small id="doneVer"></small></h3>
+			 <p>Your email address <strong id="donEmail"></strong> has already been verified.</p>
+		 </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+	var getHarsh = document.location.hash;
+	var getArray = getHarsh.split('/');
+	if (getArray.length === 5) {
+		$.getJSON('/verifyUser', {VariCode: getArray[2], hashUser: getArray[3], type: getArray[4]}, function(json, textStatus) {
+			console.log(json);
+			if (json.veriDoc) {
+				if (json.userDoc !== null) {
+					$('#NTneed').css('display', 'none');
+					document.title = "ADP | " + json.veriDoc.memberName
+					document.getElementById('theName').innerHTML = json.veriDoc.memberName
+					document.getElementById('theEmail').innerHTML = json.veriDoc.memEMail
+				} else {
+					document.title = "ADP | " + json.veriDoc.memberName
+					$('#verified').css('display', 'none');
+					document.getElementById('doneVer').innerHTML = json.veriDoc.memberName
+				}
+			}
+		});
+	}
+</script>

@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row" style="padding: 20px 0px; margin: 20px 0px;">
+    <div class="col-md-4 col-md-offset-4 shadowed">
+		 <form id="admin_login" action="#/admin/" novalidate="">
+			 <h4 class="text-center">Admin Login</h4>
+			 <div class="form-group">
+			   <label for="admin_email">Email</label>
+			   <input type="email" class="form-control" id="admin_email" placeholder="Email Address">
+			 </div>
+			 <div class="form-group">
+			   <label for="admin_password">Password</label>
+			   <input type="password" class="form-control" id="admin_password" placeholder="Password">
+			 </div>
+			 <div class="form-group">
+			   <label for="admin_state">State Representation</label>
+			   <select class="form-control" id="admin_state" placeholder="">
+				</select>
+				<p class="help-block">Please select the State you admin</p>
+			 </div>
+			 <button type="submit" id="admin_btn" class="btn btn-primary">Login</button>
+			 <button type="button" id="admin_register" class="btn btn-primary" style="margin-left: 15px;">Register</button>
+		 </form>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="comfirmIt" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+			<p class="text-center">Thank you once your admin request is granted you will be contacted via your email <span id="adminEmail"></span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/admin.js" charset="utf-8"></script>

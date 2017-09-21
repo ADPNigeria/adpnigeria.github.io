@@ -1,0 +1,852 @@
+@import 'include/function';
+@import 'include/mixin';
+@import 'include/variables';
+a, a:hover, a:active, a:visited{
+	text-decoration: none;
+}
+*{
+	overflow: none;
+}
+.slogan var{
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	font-style: normal;
+	font-family: 'Archivo Black', sans-serif;
+	&:nth-of-type(1){
+		color: $redColor;
+		letter-spacing: 3px;
+		text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	}
+	&:nth-of-type(2){
+		color: $liteBlue;
+	}
+	&:nth-of-type(3){
+		color: $darkBlue;
+	}
+}
+
+.veriSet{
+	border-radius: 12px;
+	margin-bottom: 20px;
+	h3{
+		font-family: 'Archivo Black', sans-serif;
+	}
+}
+
+#ProfileV{
+	margin: 20px;
+}
+
+#updateInfo section{
+	width: 40%;
+	float: left;
+}
+
+#theProfile select{
+	display: none;
+}
+
+.ProfilePage{
+	position: relative;
+	margin: 0px auto;
+	height: 325px;
+	width: 550px;
+	background-color: lighten(#ccc, 15%);
+	div{
+		position: relative;
+		width: 100%;
+		height: 50px;
+		margin-bottom: 5px;
+		background: darken($liteBlue, 40%);
+		box-shadow: 0px 0px 1px #ccc;
+		#phoneShow{
+			position: absolute;
+			right: 10px;
+			top: 5px;
+			color: #fff;
+			font-size: 12px;
+		}
+		img{
+			margin-left: 5px;
+			margin-top: 5px;
+			width: 65px;
+			height: 40px;
+		}
+		h4{
+			margin-top: 1px;
+			padding-top: 10px;
+			color: #fff;
+			font-variant: small-caps;
+			font-weight: 900;
+			font-family: 'Archivo Black', sans-serif;
+		}
+	}
+	img{
+		border: 1px solid #555;
+		margin-right: 10px;
+	}
+	h3{
+		margin-top: 0px;
+		margin-left: 10px;
+	}
+}
+
+#preview{
+	width: 270px;
+	height: 330px;
+	border: 1px solid #000;
+	padding: 6px;
+	margin-bottom: 6px;
+}
+
+.header{
+	position: fixed;
+	height: 7.7vh;
+	transition: 0.30s;
+	#logo{
+		width: 100px;
+		height: 46px;
+		top: 0.5vw;
+		transition: 0.30s;
+	}
+	.slogan{
+		display: none;
+		transition: 0.30s;
+	}
+	#navigation ul {
+		top: 1.6vh;
+		transition: 0.30s;
+	}
+}
+
+header{
+	position: relative;
+	height: 13.9vh;
+	width: 100%;
+	z-index: 25;
+	box-shadow: 0px 0px 20px 20px transparentize(#000, 0.7);
+	background-image: linear-gradient(180deg, $redColor 0%, darken($redColor, 5%) 20%, darken($redColor, 8%) 50.01%, darken($redColor, 10%) 100%);
+	transition: 0.30s;
+	@include mQ('200px', '900px'){
+		height: 80px;
+	}
+	#logo{
+		position: absolute;
+		float: left;
+		left: 5vw;
+		z-index: 7;
+		top: 1vw;
+		 width: 12vw;
+		 height: 13vh;
+		 box-shadow: 0px 0px 3px 3px transparentize(#000, 0.7);
+		 transition: 0.30s;
+		 @include mQ('200px', '900px'){
+			 top: 5px;
+			 left: 5px;
+			 width: 100px;
+			 height: 70px;
+		 }
+	}
+	.slogan{
+		position: absolute;
+		float: left;
+		left: 18vw;
+		top: 2.5vh;
+		z-index: 8;
+		font-family: 'Oswald', sans-serif;
+		font-size: 19px;
+		font-weight: bold;
+		font-style: normal;
+		@include mQ('200px', '900px'){
+			position: absolute;
+			top: 10px;
+			left: 105px;
+		}
+		var{
+			float: left;
+			clear: both;
+			@include mQ('200px', '900px'){
+				float: left;
+				clear: both;
+				margin-left: 5px;
+				font-size: 12px;
+				text-shadow: 2px 2px transparentize(#fff, 0.8);
+			}
+		}
+	}
+	#navigation{
+		position: relative;
+		@include mQ('200px', '900px'){
+			width: 100%;
+		}
+		#menu{
+			position: absolute;
+			top: 20px;
+			font-size: 35px;
+			color: darken(#fff, 5%);
+			cursor: default;
+			right: 15px;
+			width: 35px;
+			display: none;
+		}
+		ul{
+			position: relative;
+			right: 0;
+			top: 7.8vh;
+			color: #fff;
+			float: right;
+			margin-right: 20px;
+			list-style: none;
+			transition: 0.30s;
+			@include mQ('200px', '900px'){
+				display: none;
+				width: 100%;
+				top: 80px;
+				margin: 0;
+				float: none;
+				z-index: 22;
+				background-color: $redColor;
+			}
+			li{
+				display: inline;
+				margin: 0 5px;
+				@include mQ('200px', '900px'){
+					width: 100%;
+					display: block;
+					margin: 0;
+				}
+				a{
+					font-weight: bold;
+					color: #fff;
+					font-size: 1.0em;
+					font-variant: small-caps;
+					text-decoration: none;
+				}
+				.menulist{
+					position: relative;
+					z-index: 1;
+					display: inline-block;
+					padding: 1.1vh 1vw;
+					margin: 0 0.05vw;
+					width: 10vw;
+					height: 6vh;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+					background: linear-gradient(transparentize(darken(white, 10%), 0.7), transparentize(darken(white, 3%), 0.7));
+					box-shadow: 0px -1px 0px 1px rgba(0, 0, 0, 0.2);
+					transition: 0.30s;
+					@include mQ('200px', '900px'){
+						width: 100%;
+						display: block;
+						margin: 0;
+						height: 70px;
+						text-align: center;
+						padding-top: 19px;
+						background-color: $redColor;
+					}
+					&:hover{
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+						box-shadow: 0px -5px 5px 5px rgba(0, 0, 0, 0.2);
+						background: linear-gradient(transparentize(white, 0.5), transparentize(lighten(white, 3%), 0.5));
+					}
+				}
+				.current{
+					padding: 1vh 1vw;
+					margin: 0 0.05vw;
+					width: 10vw;
+					height: 6vh;
+					text-decoration: none;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+					box-shadow: 0px -5px 5px 5px rgba(0, 0, 0, 0.2);
+					background: linear-gradient(transparentize(white, 0.5), transparentize(lighten(white, 3%), 0.5));
+					@include mQ('200px', '900px'){
+						width: 100%;
+						display: block;
+						margin: 0;
+						height: 70px;
+						text-align: center;
+						padding-top: 19px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.demo-1{
+	position: relative;
+	z-index: 1;
+}
+
+.wrapper{
+	position:relative;
+	top: -30px;
+	z-index: 1;
+	margin: 0;
+	clear: both;
+	height: 99vh;
+	@include mQ('200px', '900px'){
+		height: 470px;
+	}
+}
+.desSec{
+	position: relative;
+	top: -30px;
+	width: 100%;
+	z-index: 2;
+	min-height: 420px;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+	background-image: linear-gradient($liteBlue, darken($liteBlue, 10%));
+	@include mQ('200px', '900px'){
+		top: 0;
+		min-height: 400px;
+	}
+}
+
+.holdFIle{
+	position: relative;
+	top: 8vh;
+	float: left;
+	width: 23%;
+	color: #fff;
+	text-align: center;
+	font-family: 'Sansita', sans-serif;
+	margin-left: 1.4%;
+	margin-bottom: 1px;
+	min-height: 300px;
+	padding: 5px 20px;
+	border-radius: 17px;
+	background-color: transparentize(#000, 0.7);
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.30s;
+	&:hover{
+		box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+		transition: box-shadow 0.30s;
+	}
+	@include mQ('600px', '900px'){
+		top: 20px;
+		min-width: 40%;
+		margin: 20px;
+		margin-left: 5%;
+		min-height: 240px;
+		float: left;
+	}
+	@include mQ('200px', '599px'){
+		top: 20px;
+		min-width: 90%;
+		margin: 10px auto;
+		float: none;
+	}
+}
+
+.shadowed{
+	box-shadow: 0px 0px 2px 2px transparentize(#ccc, 0.8);
+	padding: 10px;
+	transition: 0.30s;
+	&:hover{
+		box-shadow: 0px 1px 2px 3px transparentize(#ccc, 0.7);
+		transition: 0.30s;
+	}
+}
+
+/*To hold the donate sectiong at the side bar*/
+.sideDa{
+	position: fixed;
+	z-index: 20;
+	top: 70%;
+	right: -35px;
+	transform: rotate(90deg);
+	transform-origin: right top 0;
+	transition: 0.30s;
+	span{
+		padding: 1px 12px;
+		line-height: 100px;
+		background-color: #ffffff;
+		font-variant: small-caps;
+		font-weight: bold;
+		background: linear-gradient(transparentize(white, 0.2), transparentize(darken(white, 3%), 0.2));
+		transition: 0.30s;
+	}
+	&:hover{
+		span{
+			padding: 10px 12px;
+			box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+		}
+		right: -20px;
+		padding: 0;
+	}
+}
+.drawBack{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	z-index: 20;
+	transition: 0.30s;
+	span{
+		margin-top: 10px;
+		padding: 20px;
+		background-color: #ffffff;
+		display: block;
+		font-variant: small-caps;
+		font-weight: bold;
+		background: linear-gradient(transparentize(white, 0.1), transparentize(darken(white, 3%), 0.1));
+		transition: 0.30s;
+		box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+	}
+}
+
+.registerPage{
+	position: relative;
+	margin-top: 19vh;
+	margin-bottom: 20px;
+	min-height: 70vh;
+	transition: 0.30s;
+	.input-group{
+		margin: 20px 0;
+	}
+	img{
+		width: 190px;
+		height: 200px;
+	}
+
+	.showMe{
+		display: block;
+	}
+#cropi  {width:75%;}
+	#namealert{
+		display: none;
+	}
+	#phonealert{
+		display: none;
+	}
+	#emailalert{
+		display: none;
+	}
+	#DOBMsg {
+		display: none;
+	}
+	#grabSTError {
+		display: none;
+	}
+	#GError{
+		display: none;
+	}
+	@include mQ('200px', '900px'){
+		margin-top: 10vh;
+		margin-bottom: 50px;
+	}
+}
+
+/*For holding the endorse section to a top section*/
+.aboutPage{
+	position: relative;
+	padding-top: 20px;
+	min-height: 70vh;
+	margin-top: 9vh;
+	// box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 12px;
+	margin-bottom: 20px;
+	@include mQ('200px', '900px'){
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	h2{
+	  font-size: 47px;
+	  font-family: 'Archivo Black', sans-serif;
+	  text-align: center;
+	  text-shadow: 5px 5px 1px transparentize(#ccc, 0.4);
+	  // mobile layout
+	  @include mQ('200px', '900px'){
+		 font-size: 25px;
+		 letter-spacing: 1px;
+	  }
+	}
+	h3{
+	  font-size: 27px;
+	  font-family: 'Archivo Black', sans-serif;
+	  text-align: center;
+	  text-shadow: 5px 5px 1px transparentize(#ccc, 0.4);
+	  // mobile layout
+	  @include mQ('200px', '900px'){
+		 font-size: 25px;
+		 letter-spacing: 1px;
+	  }
+	}
+	.rightSide{
+		border-right: 1px solid #000;
+		img{
+			box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.2);
+		}
+	}
+	.leftSide{
+		p{
+		  width: 87%;
+		  margin: 5px auto;
+		  line-height: 1.4em;
+		  // mobile layout
+		  @include mQ('200px', '900px'){
+			 width: 96%;
+			 margin-bottom: 20px;
+		  }
+		  span{
+			 font-family: 'Sansita', sans-serif;
+			 font-weight: bold;
+			 font-style: italic;
+		  }
+		}
+		.slogans{
+		  font-size: 24px;
+		  line-height: 1.15em;
+		  margin-bottom: 20px;
+		}
+	}
+	.belowSide{
+		position: relative;
+		margin-top: 70px;
+		padding-top: 20px;
+		box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+		border-radius: 25px;
+		min-height: 300px;
+		.adminOff{
+			position: relative;
+			margin-top: 70px;
+			margin-bottom: 70px;
+			padding-bottom: 20px;
+			text-align: center;
+			box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+			h2{
+				font-variant: small-caps;
+			}
+		}
+	}
+	.figure{
+		margin-top: 30px;
+	}
+	.card {
+		/* Add shadows to create the "card" effect */
+		width: 20%;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		border-radius: 5px;
+		transition: 0.3s;
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: 20px;
+		@include mQ('200px', '900px'){
+			width: 60%;
+			display: block;
+			margin: 20px auto;
+		}
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .container {
+	  width: 100%;
+		padding: 2px 16px;
+  }
+}
+
+.HoldCard{
+	position: relative;
+	width: 45%;
+	min-height: 120px;
+	word-wrap: break-word;
+	font-size: 12px;
+	float: left;
+	margin-left: 20px;
+	&:active{
+		background-color: $liteBlue;
+	}
+}
+.activated{
+	background-color: darken($liteBlue, 5%);
+	transition: background-color 3s;
+}
+
+/* for structure page of each section */
+.mainStr{
+	position: relative;
+	z-index: 9;
+	border-radius: 8px;
+	box-shadow: 0px 0px 3px 3px transparentize(#333, 0.9);
+	h2{
+	  font-size: 37px;
+	  font-family: 'Archivo Black', sans-serif;
+	  text-align: center;
+	  font-variant: small-caps;
+	  text-shadow: 5px 5px 1px transparentize(#ccc, 0.4);
+	  // mobile layout
+	  @include mQ('200px', '900px'){
+		 font-size: 25px;
+		 letter-spacing: 1px;
+	  }
+	}
+
+	ul {
+		border-right: 1px solid #ccc;
+		list-style: none;
+		padding: 10px 0;
+		@include mQ('200px', '900px'){
+			border-right: 0px solid #000;
+			width: 100%;
+			margin: 0 auto;
+		}
+		li{
+			padding: 19px 0;
+			font-variant: small-caps;
+			font-weight: bold;
+			font-size: 16px;
+			padding-left: 14px;
+			border-bottom: 1px solid #ccc;
+			cursor: pointer;
+			@include mQ('200px', '900px'){
+				padding: 10px 3%;
+				display: inline;
+				width: 10%;
+				border-right: 1px solid #ccc;
+				box-shadow: 2px 0px 2px #ccc;
+			}
+			&:hover{
+				background-color: #eee;
+			}
+		}
+	}
+	.tabsConOut{
+		position: absolute;
+		top: 100px;
+		left: 0;
+		opacity: 0;
+		height: 0px;
+		transition: 0.37s;
+		@include mQ('200px', '900px'){
+			position: absolute;
+			top: 100px;
+			left: 0;
+		}
+	}
+	.tabsConIn{
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		opacity: 1;
+		min-height: 100px;
+		transition: 0.37s;
+		@include mQ('200px', '900px'){
+			position: absolute;
+			top: 0px;
+			left: 0;
+		}
+	}
+	.holdTabs{
+		min-height: 300px;
+		margin-bottom: 20px;
+	}
+}
+
+/* This is to hold the heads of the structure of party */
+.headedHold{
+	position: relative;
+	z-index: 9;
+	min-height: 220px;
+	@include mQ('200px', '900px'){
+		height: 430px;
+	}
+}
+
+.headOut{
+	position: absolute;
+	top: -100px;
+	left: 0;
+	opacity: 0;
+	height: 0;
+	transition: 0.30s;
+	.col-md-7{
+		@include mQ('200px', '900px'){
+			float: left;
+			clear: both;
+		}
+	}
+}
+.headIn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	height: 100px;
+	transition: 0.30s;
+	.col-md-7{
+		@include mQ('200px', '900px'){
+			float: left;
+			clear: both;
+		}
+	}
+}
+
+.contactDe{
+	min-height: 200px;
+	padding: 12px;
+	border-radius: 15px;
+	ul{
+	  position: relative;
+	  top: 10px;
+	  text-align: center;
+	  width: 90%;
+	  margin: 0 auto;
+	  background-color: transparentize(#ffffff, 0.7);
+	@include border-radius(16px);
+	  clear: both;
+	  li{
+		  display: inline-block;
+		  margin: 10px;
+		  margin-bottom: 0px;
+		  font-size: 25px;
+		  font-weight: bold;
+	  }
+	}
+}
+
+.endorse{
+	position: relative;
+	margin: 20px auto;
+	padding-top: 30px;
+	min-height: 120px;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+}
+
+footer{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 470px;
+  background-color: $darkBlue;
+  padding-top: 30px;
+  // mobile section for footer
+  @include mQ('200px', '900px'){
+    bottom: 0;
+    height: auto;
+  }
+  section{
+    position: relative;
+    float: left;
+    width: (90%) / 3;
+    margin-left: 2%;
+	 background-color: transparentize(#ffffff, 0.7);
+	 box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
+    color: darken(#fff, 12%);
+    @include border-radius(16px);
+    border: 1px solid #ccc;
+    min-height: 325px;
+    padding-top: 10px;
+    h3{
+      position: relative;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    p{
+      text-align: center;
+      line-height: 25px;
+      color: #fff;
+    }
+    // mobile layout for the footer section tag
+    @include mQ('200px', '900px'){
+      width: 90%;
+      margin: 20px auto;
+      min-height: 300px;
+      float: none;
+      border: 1px solid #ccc;
+    }
+    &:nth-of-type(1){
+      ul{
+        position: relative;
+        top: 10px;
+        text-align: center;
+		  width: 90%;
+		  margin: 0 auto;
+		  background-color: transparentize(#ffffff, 0.7);
+		@include border-radius(16px);
+        clear: both;
+		  li{
+			  display: inline-block;
+			  margin: 10px;
+			  margin-bottom: 0px;
+			  font-size: 25px;
+			  font-weight: bold;
+		  }
+      }
+    }
+    &:nth-of-type(2){
+      list-style: inside;
+      line-height: 45px;
+      font-size: 18px;
+      display: block;
+      padding-left: 80px;
+      ul{
+        list-style-type: circle;
+      }
+		@include mQ('200px', '600px'){
+			display: none;
+		}
+    }
+    &:nth-of-type(3){
+      text-align: center;
+      img{
+        width: 260px;
+        height: 146px;
+        margin: 0;
+		  box-shadow: 0px 0px 3px 3px transparentize(#000, 0.7);
+        @include mQ('200px', '900px'){
+          margin: 0 3.5%;
+        }
+      }
+      p{
+        font-family: 'Sansita', sans-serif;
+        font-weight: bolder;
+        font-size: 21px;
+        margin-top: 5px;
+        text-shadow: 0px 1px 5px #000;
+        span{
+          &:nth-child(1){
+            color: $redColor;
+          }
+          &:nth-child(2){
+            color: $liteBlue;
+          }
+          &:nth-child(3){
+            color: $darkBlue;
+          }
+        }
+		  @include mQ('200px', '900px'){
+			  font-size: 15px;
+		  }
+      }
+		@include mQ('200px', '600px'){
+			display: none;
+		}
+    }
+  }
+  .copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    height: 60px;
+    color: #fff;
+    padding: 10px;
+    padding-top: 15px;
+    text-align: center;
+    @include mQ('200px', '900px'){
+      position: relative;
+      bottom: 0;
+    }
+  }
+}

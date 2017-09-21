@@ -1,0 +1,737 @@
+a, a:hover, a:active, a:visited {
+  text-decoration: none; }
+
+* {
+  overflow: none; }
+
+.slogan var {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  font-style: normal;
+  font-family: 'Archivo Black', sans-serif; }
+  .slogan var:nth-of-type(1) {
+    color: #E81919;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3); }
+  .slogan var:nth-of-type(2) {
+    color: #4BA0FD; }
+  .slogan var:nth-of-type(3) {
+    color: #030D42; }
+
+.veriSet {
+  border-radius: 12px;
+  margin-bottom: 20px; }
+  .veriSet h3 {
+    font-family: 'Archivo Black', sans-serif; }
+
+#ProfileV {
+  margin: 20px; }
+
+#updateInfo section {
+  width: 40%;
+  float: left; }
+
+#theProfile select {
+  display: none; }
+
+.ProfilePage {
+  position: relative;
+  margin: 0px auto;
+  height: 325px;
+  width: 550px;
+  background-color: #f2f2f2; }
+  .ProfilePage div {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    background: #013b7b;
+    box-shadow: 0px 0px 1px #ccc; }
+    .ProfilePage div #phoneShow {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      color: #fff;
+      font-size: 12px; }
+    .ProfilePage div img {
+      margin-left: 5px;
+      margin-top: 5px;
+      width: 65px;
+      height: 40px; }
+    .ProfilePage div h4 {
+      margin-top: 1px;
+      padding-top: 10px;
+      color: #fff;
+      font-variant: small-caps;
+      font-weight: 900;
+      font-family: 'Archivo Black', sans-serif; }
+  .ProfilePage img {
+    border: 1px solid #555;
+    margin-right: 10px; }
+  .ProfilePage h3 {
+    margin-top: 0px;
+    margin-left: 10px; }
+
+#preview {
+  width: 270px;
+  height: 330px;
+  border: 1px solid #000;
+  padding: 6px;
+  margin-bottom: 6px; }
+
+.header {
+  position: fixed;
+  height: 7.7vh;
+  transition: 0.30s; }
+  .header #logo {
+    width: 100px;
+    height: 46px;
+    top: 0.5vw;
+    transition: 0.30s; }
+  .header .slogan {
+    display: none;
+    transition: 0.30s; }
+  .header #navigation ul {
+    top: 1.6vh;
+    transition: 0.30s; }
+
+header {
+  position: relative;
+  height: 13.9vh;
+  width: 100%;
+  z-index: 25;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(180deg, #E81919 0%, #d21515 20%, #c51414 50.01%, #bb1313 100%);
+  transition: 0.30s; }
+  @media screen and (min-width: 200px) and (max-width: 900px) {
+    header {
+      height: 80px; } }
+  header #logo {
+    position: absolute;
+    float: left;
+    left: 5vw;
+    z-index: 7;
+    top: 1vw;
+    width: 12vw;
+    height: 13vh;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+    transition: 0.30s; }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      header #logo {
+        top: 5px;
+        left: 5px;
+        width: 100px;
+        height: 70px; } }
+  header .slogan {
+    position: absolute;
+    float: left;
+    left: 18vw;
+    top: 2.5vh;
+    z-index: 8;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    font-style: normal; }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      header .slogan {
+        position: absolute;
+        top: 10px;
+        left: 105px; } }
+    header .slogan var {
+      float: left;
+      clear: both; }
+      @media screen and (min-width: 200px) and (max-width: 900px) {
+        header .slogan var {
+          float: left;
+          clear: both;
+          margin-left: 5px;
+          font-size: 12px;
+          text-shadow: 2px 2px rgba(255, 255, 255, 0.2); } }
+  header #navigation {
+    position: relative; }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      header #navigation {
+        width: 100%; } }
+    header #navigation #menu {
+      position: absolute;
+      top: 20px;
+      font-size: 35px;
+      color: #f2f2f2;
+      cursor: default;
+      right: 15px;
+      width: 35px;
+      display: none; }
+    header #navigation ul {
+      position: relative;
+      right: 0;
+      top: 7.8vh;
+      color: #fff;
+      float: right;
+      margin-right: 20px;
+      list-style: none;
+      transition: 0.30s; }
+      @media screen and (min-width: 200px) and (max-width: 900px) {
+        header #navigation ul {
+          display: none;
+          width: 100%;
+          top: 80px;
+          margin: 0;
+          float: none;
+          z-index: 22;
+          background-color: #E81919; } }
+      header #navigation ul li {
+        display: inline;
+        margin: 0 5px; }
+        @media screen and (min-width: 200px) and (max-width: 900px) {
+          header #navigation ul li {
+            width: 100%;
+            display: block;
+            margin: 0; } }
+        header #navigation ul li a {
+          font-weight: bold;
+          color: #fff;
+          font-size: 1.0em;
+          font-variant: small-caps;
+          text-decoration: none; }
+        header #navigation ul li .menulist {
+          position: relative;
+          z-index: 1;
+          display: inline-block;
+          padding: 1.1vh 1vw;
+          margin: 0 0.05vw;
+          width: 10vw;
+          height: 6vh;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          background: linear-gradient(rgba(230, 230, 230, 0.3), rgba(247, 247, 247, 0.3));
+          box-shadow: 0px -1px 0px 1px rgba(0, 0, 0, 0.2);
+          transition: 0.30s; }
+          @media screen and (min-width: 200px) and (max-width: 900px) {
+            header #navigation ul li .menulist {
+              width: 100%;
+              display: block;
+              margin: 0;
+              height: 70px;
+              text-align: center;
+              padding-top: 19px;
+              background-color: #E81919; } }
+          header #navigation ul li .menulist:hover {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            box-shadow: 0px -5px 5px 5px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)); }
+        header #navigation ul li .current {
+          padding: 1vh 1vw;
+          margin: 0 0.05vw;
+          width: 10vw;
+          height: 6vh;
+          text-decoration: none;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          box-shadow: 0px -5px 5px 5px rgba(0, 0, 0, 0.2);
+          background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)); }
+          @media screen and (min-width: 200px) and (max-width: 900px) {
+            header #navigation ul li .current {
+              width: 100%;
+              display: block;
+              margin: 0;
+              height: 70px;
+              text-align: center;
+              padding-top: 19px; } }
+
+.demo-1 {
+  position: relative;
+  z-index: 1; }
+
+.wrapper {
+  position: relative;
+  top: -30px;
+  z-index: 1;
+  margin: 0;
+  clear: both;
+  height: 99vh; }
+  @media screen and (min-width: 200px) and (max-width: 900px) {
+    .wrapper {
+      height: 470px; } }
+
+.desSec {
+  position: relative;
+  top: -30px;
+  width: 100%;
+  z-index: 2;
+  min-height: 420px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(#4BA0FD, #1985fc); }
+  @media screen and (min-width: 200px) and (max-width: 900px) {
+    .desSec {
+      top: 0;
+      min-height: 400px; } }
+
+.holdFIle {
+  position: relative;
+  top: 8vh;
+  float: left;
+  width: 23%;
+  color: #fff;
+  text-align: center;
+  font-family: 'Sansita', sans-serif;
+  margin-left: 1.4%;
+  margin-bottom: 1px;
+  min-height: 300px;
+  padding: 5px 20px;
+  border-radius: 17px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.30s; }
+  .holdFIle:hover {
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.30s; }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    .holdFIle {
+      top: 20px;
+      min-width: 40%;
+      margin: 20px;
+      margin-left: 5%;
+      min-height: 240px;
+      float: left; } }
+  @media screen and (min-width: 200px) and (max-width: 599px) {
+    .holdFIle {
+      top: 20px;
+      min-width: 90%;
+      margin: 10px auto;
+      float: none; } }
+
+.shadowed {
+  box-shadow: 0px 0px 2px 2px rgba(204, 204, 204, 0.2);
+  padding: 10px;
+  transition: 0.30s; }
+  .shadowed:hover {
+    box-shadow: 0px 1px 2px 3px rgba(204, 204, 204, 0.3);
+    transition: 0.30s; }
+
+/*To hold the donate sectiong at the side bar*/
+.sideDa {
+  position: fixed;
+  z-index: 20;
+  top: 70%;
+  right: -35px;
+  transform: rotate(90deg);
+  transform-origin: right top 0;
+  transition: 0.30s; }
+  .sideDa span {
+    padding: 1px 12px;
+    line-height: 100px;
+    background-color: #ffffff;
+    font-variant: small-caps;
+    font-weight: bold;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(247, 247, 247, 0.8));
+    transition: 0.30s; }
+  .sideDa:hover {
+    right: -20px;
+    padding: 0; }
+    .sideDa:hover span {
+      padding: 10px 12px;
+      box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2); }
+
+.drawBack {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 20;
+  transition: 0.30s; }
+  .drawBack span {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    display: block;
+    font-variant: small-caps;
+    font-weight: bold;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(247, 247, 247, 0.9));
+    transition: 0.30s;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2); }
+
+.registerPage {
+  position: relative;
+  margin-top: 19vh;
+  margin-bottom: 20px;
+  min-height: 70vh;
+  transition: 0.30s; }
+  .registerPage .input-group {
+    margin: 20px 0; }
+  .registerPage img {
+    width: 190px;
+    height: 200px; }
+  .registerPage .showMe {
+    display: block; }
+  .registerPage #cropi {
+    width: 75%; }
+  .registerPage #namealert {
+    display: none; }
+  .registerPage #phonealert {
+    display: none; }
+  .registerPage #emailalert {
+    display: none; }
+  .registerPage #DOBMsg {
+    display: none; }
+  .registerPage #grabSTError {
+    display: none; }
+  .registerPage #GError {
+    display: none; }
+  @media screen and (min-width: 200px) and (max-width: 900px) {
+    .registerPage {
+      margin-top: 10vh;
+      margin-bottom: 50px; } }
+
+/*For holding the endorse section to a top section*/
+.aboutPage {
+  position: relative;
+  padding-top: 20px;
+  min-height: 70vh;
+  margin-top: 9vh;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  /* On mouse-over, add a deeper shadow */
+  /* Add some padding inside the card container */ }
+  @media screen and (min-width: 200px) and (max-width: 900px) {
+    .aboutPage {
+      margin-top: 10px;
+      margin-bottom: 10px; } }
+  .aboutPage h2 {
+    font-size: 47px;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 1px rgba(204, 204, 204, 0.6); }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      .aboutPage h2 {
+        font-size: 25px;
+        letter-spacing: 1px; } }
+  .aboutPage h3 {
+    font-size: 27px;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 1px rgba(204, 204, 204, 0.6); }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      .aboutPage h3 {
+        font-size: 25px;
+        letter-spacing: 1px; } }
+  .aboutPage .rightSide {
+    border-right: 1px solid #000; }
+    .aboutPage .rightSide img {
+      box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.2); }
+  .aboutPage .leftSide p {
+    width: 87%;
+    margin: 5px auto;
+    line-height: 1.4em; }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      .aboutPage .leftSide p {
+        width: 96%;
+        margin-bottom: 20px; } }
+    .aboutPage .leftSide p span {
+      font-family: 'Sansita', sans-serif;
+      font-weight: bold;
+      font-style: italic; }
+  .aboutPage .leftSide .slogans {
+    font-size: 24px;
+    line-height: 1.15em;
+    margin-bottom: 20px; }
+  .aboutPage .belowSide {
+    position: relative;
+    margin-top: 70px;
+    padding-top: 20px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    min-height: 300px; }
+    .aboutPage .belowSide .adminOff {
+      position: relative;
+      margin-top: 70px;
+      margin-bottom: 70px;
+      padding-bottom: 20px;
+      text-align: center;
+      box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2); }
+      .aboutPage .belowSide .adminOff h2 {
+        font-variant: small-caps; }
+  .aboutPage .figure {
+    margin-top: 30px; }
+  .aboutPage .card {
+    /* Add shadows to create the "card" effect */
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px; }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      .aboutPage .card {
+        width: 60%;
+        display: block;
+        margin: 20px auto; } }
+  .aboutPage .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+  .aboutPage .container {
+    width: 100%;
+    padding: 2px 16px; }
+
+.HoldCard {
+  position: relative;
+  width: 45%;
+  min-height: 120px;
+  word-wrap: break-word;
+  font-size: 12px;
+  float: left;
+  margin-left: 20px; }
+  .HoldCard:active {
+    background-color: #4BA0FD; }
+
+.activated {
+  background-color: #3293fd;
+  transition: background-color 3s; }
+
+/* for structure page of each section */
+.mainStr {
+  position: relative;
+  z-index: 9;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px 3px rgba(51, 51, 51, 0.1); }
+  .mainStr h2 {
+    font-size: 37px;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    font-variant: small-caps;
+    text-shadow: 5px 5px 1px rgba(204, 204, 204, 0.6); }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      .mainStr h2 {
+        font-size: 25px;
+        letter-spacing: 1px; } }
+  .mainStr ul {
+    border-right: 1px solid #ccc;
+    list-style: none;
+    padding: 10px 0; }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      .mainStr ul {
+        border-right: 0px solid #000;
+        width: 100%;
+        margin: 0 auto; } }
+    .mainStr ul li {
+      padding: 19px 0;
+      font-variant: small-caps;
+      font-weight: bold;
+      font-size: 16px;
+      padding-left: 14px;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer; }
+      @media screen and (min-width: 200px) and (max-width: 900px) {
+        .mainStr ul li {
+          padding: 10px 3%;
+          display: inline;
+          width: 10%;
+          border-right: 1px solid #ccc;
+          box-shadow: 2px 0px 2px #ccc; } }
+      .mainStr ul li:hover {
+        background-color: #eee; }
+  .mainStr .tabsConOut {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    opacity: 0;
+    height: 0px;
+    transition: 0.37s; }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      .mainStr .tabsConOut {
+        position: absolute;
+        top: 100px;
+        left: 0; } }
+  .mainStr .tabsConIn {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    min-height: 100px;
+    transition: 0.37s; }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      .mainStr .tabsConIn {
+        position: absolute;
+        top: 0px;
+        left: 0; } }
+  .mainStr .holdTabs {
+    min-height: 300px;
+    margin-bottom: 20px; }
+
+/* This is to hold the heads of the structure of party */
+.headedHold {
+  position: relative;
+  z-index: 9;
+  min-height: 220px; }
+  @media screen and (min-width: 200px) and (max-width: 900px) {
+    .headedHold {
+      height: 430px; } }
+
+.headOut {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  opacity: 0;
+  height: 0;
+  transition: 0.30s; }
+  @media screen and (min-width: 200px) and (max-width: 900px) {
+    .headOut .col-md-7 {
+      float: left;
+      clear: both; } }
+
+.headIn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  height: 100px;
+  transition: 0.30s; }
+  @media screen and (min-width: 200px) and (max-width: 900px) {
+    .headIn .col-md-7 {
+      float: left;
+      clear: both; } }
+
+.contactDe {
+  min-height: 200px;
+  padding: 12px;
+  border-radius: 15px; }
+  .contactDe ul {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    padding: 8px;
+    background-clip: padding-box;
+    clear: both; }
+    .contactDe ul li {
+      display: inline-block;
+      margin: 10px;
+      margin-bottom: 0px;
+      font-size: 25px;
+      font-weight: bold; }
+
+.endorse {
+  position: relative;
+  margin: 20px auto;
+  padding-top: 30px;
+  min-height: 120px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000; }
+
+footer {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 470px;
+  background-color: #030D42;
+  padding-top: 30px; }
+  @media screen and (min-width: 200px) and (max-width: 900px) {
+    footer {
+      bottom: 0;
+      height: auto; } }
+  footer section {
+    position: relative;
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.2);
+    color: #e0e0e0;
+    border-radius: 16px;
+    padding: 8px;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    min-height: 325px;
+    padding-top: 10px; }
+    footer section h3 {
+      position: relative;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #fff; }
+    footer section p {
+      text-align: center;
+      line-height: 25px;
+      color: #fff; }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      footer section {
+        width: 90%;
+        margin: 20px auto;
+        min-height: 300px;
+        float: none;
+        border: 1px solid #ccc; } }
+    footer section:nth-of-type(1) ul {
+      position: relative;
+      top: 10px;
+      text-align: center;
+      width: 90%;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 16px;
+      padding: 8px;
+      background-clip: padding-box;
+      clear: both; }
+      footer section:nth-of-type(1) ul li {
+        display: inline-block;
+        margin: 10px;
+        margin-bottom: 0px;
+        font-size: 25px;
+        font-weight: bold; }
+    footer section:nth-of-type(2) {
+      list-style: inside;
+      line-height: 45px;
+      font-size: 18px;
+      display: block;
+      padding-left: 80px; }
+      footer section:nth-of-type(2) ul {
+        list-style-type: circle; }
+      @media screen and (min-width: 200px) and (max-width: 600px) {
+        footer section:nth-of-type(2) {
+          display: none; } }
+    footer section:nth-of-type(3) {
+      text-align: center; }
+      footer section:nth-of-type(3) img {
+        width: 260px;
+        height: 146px;
+        margin: 0;
+        box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3); }
+        @media screen and (min-width: 200px) and (max-width: 900px) {
+          footer section:nth-of-type(3) img {
+            margin: 0 3.5%; } }
+      footer section:nth-of-type(3) p {
+        font-family: 'Sansita', sans-serif;
+        font-weight: bolder;
+        font-size: 21px;
+        margin-top: 5px;
+        text-shadow: 0px 1px 5px #000; }
+        footer section:nth-of-type(3) p span:nth-child(1) {
+          color: #E81919; }
+        footer section:nth-of-type(3) p span:nth-child(2) {
+          color: #4BA0FD; }
+        footer section:nth-of-type(3) p span:nth-child(3) {
+          color: #030D42; }
+        @media screen and (min-width: 200px) and (max-width: 900px) {
+          footer section:nth-of-type(3) p {
+            font-size: 15px; } }
+      @media screen and (min-width: 200px) and (max-width: 600px) {
+        footer section:nth-of-type(3) {
+          display: none; } }
+  footer .copyright {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    height: 60px;
+    color: #fff;
+    padding: 10px;
+    padding-top: 15px;
+    text-align: center; }
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      footer .copyright {
+        position: relative;
+        bottom: 0; } }
+
+/*# sourceMappingURL=master.css.map */

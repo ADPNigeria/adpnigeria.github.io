@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <div class="row" style="padding:20px 0; margin:20px 0;">
+	  <div class="col-md-12">
+      <div class="col-md-3 shadowed">
+        <figure class="figure">
+          <img src="/images/adplogo.jpg" width="90%" class="img-rounded" alt="Admin Profile">
+          <figcaption class="figure-caption">The Admin</figcaption>
+        </figure>
+		  <p>
+			  <strong>Position:</strong> <span id="position">ICT Admin</span>
+			  <button type="button" class="btn btn-primary">Log Out</button>
+		  </p>
+      </div>
+      <div class="col-md-9">
+		  <form id="official_reg" action="/#/dashboard/" novalidate="">
+			  <div class="form-group">
+				  <label for="officer_full">Full Name</label>
+				  <input type="text" class="form-control" id="officer_full" placeholder="Officer's Full Name">
+				  <p class="help-block">The Officer Full Name</p>
+			  </div>
+			  <div class="form-group">
+				  <label for="officer_position">Position</label>
+				  <input type="text" class="form-control" id="officer_position" placeholder="Officer's Position">
+				  <p class="help-block">The Officer's Position</p>
+			  </div>
+			  <div class="form-group">
+				  <label for="officer_contact">Contact Number</label>
+				  <input type="text" class="form-control" id="officer_contact" placeholder="Officer's Contact Number">
+				  <p class="help-block">Contact Number of the Officer</p>
+			  </div>
+			  <div class="form-group">
+				  <label for="officer_email">Officer's Email</label>
+				  <input type="email" class="form-control" id="officer_email" placeholder="Officer's Email">
+				  <p class="help-block">Email address of the officer</p>
+			  </div>
+			  <div class="form-group">
+				  <label for="officer_level">Category</label>
+				  <select class="form-control" id="officer_level">
+					  <option value="Foundation Council">Foundation Council</option>
+					  <option value="Board of Trustees">Board of Trustees</option>
+					  <option value="National Executive Council">National Executive Council</option>
+					  <option value="National Working Commmittee">National Working Commmittee</option>
+					  <option value="State Chairman">State Chairman</option>
+					  <option value="Administrative Staff">Administrative Staff</option>
+				  </select>
+				  <p class="help-block">Select the category of the Official</p>
+			  </div>
+			  <div class="form-group">
+				  <label for="official_state">State of Origin</label>
+				  <select class="form-control" id="official_state">
+
+				  </select>
+			  </div>
+			  <div class="form-group">
+				  <label for="officer_gender">Gender</label>
+				  <select class="form-control" id="officer_gender">
+					  <option value="Male">Male</option>
+					  <option value="Female">Female</option>
+				  </select>
+			  </div>
+			  <button type="submit" class="btn btn-primary pull-left">Submit</button> <p class="pull-left" id="DataAdded"></p>
+		  </form>
+      </div>
+	  </div>
+  </div>
+</div>
+<script src="/javascripts/dashboard.js" charset="utf-8"></script>

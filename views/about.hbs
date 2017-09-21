@@ -1,0 +1,161 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 aboutPage">
+			<div class="col-md-8 rightSide text-center">
+				<h2 class="slogan animated slideInLeft"><var>Action</var> <var>Democratic</var> <var>Party</var> <small id="TheHash"></small></h2>
+				<img class="animated slideInLeft" src="/images/adplogo.jpg" width="440" alt="" />
+			</div>
+			<div class="col-md-4 text-center leftSide">
+				<h2 class="slogan animated slideInRight"><var>A</var><var>D</var><var>P</var></h2>
+				<p class="slogans animated slideInRight">
+					Slogan: <span>One Destiny</span>
+					<br> Motto: <span>Action Forward</span>
+				</p>
+				<p class="animated slideInRight">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				</p>
+			</div>
+			<div class="col-md-12 belowSide">
+				<p class="pull-left col-md-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="col-md-3">
+					<figure class="figure">
+						<img src="/images/AdpCoverCon.jpg" width="200px" height="300px" class="img-rounded" alt="ADP Constitution">
+						<figcaption class="figure-caption">ADP Constitution</figcaption>
+					</figure>
+					<figure class="figure">
+						<img src="/images/AdpCoverMani.jpg" width="200px" height="300px" class="img-rounded" alt="ADP Manifesto">
+						<figcaption class="figure-caption">ADP Manifesto</figcaption>
+					</figure>
+				</div>
+				<div class="clearfix">...</div>
+				<div class="col-md-12 adminOff">
+					<h2>Administrative Staff <small>contact personel</small></h2>
+					<div id="peopleDiv">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">...</div>
+	</div>
+	<script type="text/javascript">
+		function justPeople() {
+			let people = [{
+					id: 2,
+					profileImage: '/images/jp/2.jpg',
+					title: 'Hon.',
+					name: 'Pam Ibrahim',
+					gender: 'Male',
+					position: 'Admin Secretary',
+					number: '08035938903',
+					email: 'adminsec@adp.ng',
+					qualification: 'B. Hon Library and Information',
+					pesDes: 'The little I know about myself',
+					state: 'Niger State',
+					localgovt: 'Bida',
+					ward: 'Masaga B'
+				},
+				{
+					id: 3,
+					profileImage: '/images/jp/6.jpg',
+					title: 'Hon.',
+					name: 'Hassan Sani',
+					gender: 'Male',
+					position: 'Head of ICT',
+					number: '08035938903',
+					email: 'hassan@adp.ng',
+					qualification: 'B. Hon Library and Information',
+					pesDes: 'The little I know about myself',
+					state: 'Niger State',
+					localgovt: 'Bida',
+					ward: 'Masaga B'
+				},
+				{
+					id: 4,
+					profileImage: '/images/adplogo.jpg',
+					title: 'Mr.',
+					name: 'James Ogbodo',
+					gender: 'Male',
+					position: 'Membership card contact personel',
+					number: '09021682129',
+					email: '',
+					qualification: '',
+					pesDes: '',
+					state: 'Enugu state',
+					localgovt: 'Nkanu East',
+					ward: 'Owo'
+				},
+				{
+					id: 5,
+					profileImage: '/images/jp/acction.jpg',
+					title: 'Mr.',
+					name: 'Duru Praise-God Kizito',
+					gender: 'Male',
+					position: 'Admin Staff',
+					number: '08128190603',
+					email: 'Kizito2nv@gmail.com',
+					qualification: 'B.tech prosthetics and orthotics',
+					pesDes: '',
+					state: 'Imo State',
+					localgovt: 'Ideato south',
+					ward: 'Ugbele'
+				},
+				{
+					id: 6,
+					profileImage: '/images/jp/9.jpeg',
+					title: 'Mrs.',
+					name: 'Tor-manger Naomi Mdoo',
+					gender: 'Female',
+					position: 'Admin Staff',
+					number: '08063303332',
+					email: 'princessnaomiacc@adp.ng',
+					qualification: 'B.Sc Accountancy',
+					pesDes: '',
+					state: 'Taraba State',
+					localgovt: 'Donga',
+					ward: 'Akete'
+				},
+				{
+					id: 7,
+					profileImage: '/images/jp/5.jpeg',
+					title: 'Mrs.',
+					name: 'Yaktu Tongriyang M.',
+					gender: 'Female',
+					position: 'Admin Staff',
+					number: '08140798880',
+					email: '',
+					qualification: '',
+					pesDes: '',
+					state: 'Plateau State',
+					localgovt: 'Mangu',
+					ward: 'Mangun'
+				},
+				{
+					id: 8,
+					profileImage: '/images/jp/fait.jpeg',
+					title: 'Mrs.',
+					name: 'Faith Nguumbur James',
+					gender: 'Female',
+					position: 'contact personel YDG',
+					number: '08129375235',
+					email: 'Faithjamesadp@gmail.com',
+					qualification: ' B.sc Mass Com',
+					pesDes: '',
+					state: 'Benue State',
+					localgovt: 'Ushongu',
+					ward: 'Mbaka'
+				}
+			];
+
+			var divPeople = document.getElementById('peopleDiv');
+			var htmldata = '<div>';
+			for (let i = 0; i < people.length; i++) {
+				htmldata += '<div class="card" data-toggle="modal" data-target="#modal-' + people[i].id + '"><img src="' + people[i].profileImage + '" class="img-rounded" alt="'+people[i].name+'" style="width:100%; height: 170px;"><div class="container"><h5><b>' + people[i].name + '</b></h5><p>' + people[i].position + '</p><p>Read More</p></div></div><div class="modal fade" id="modal-'+people[i].id+'"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title">'+people[i].name+'</h4></div><div class="modal-body"><div class="col-md-2 pull-left"><img src="'+people[i].profileImage+'" alt="'+people[i].name+'" width="220px" height="100px" class="img-circle"></div><div class="col-md-9 pull-left"><dl class="dl-horizontal"><dt>Full Name:</dt><dd>'+people[i].name+'</dd><dt>Gender:</dt><dd>'+people[i].gender+'</dd><dt>Position:</dt><dd>'+people[i].position+'</dd><dt>Phone Number:</dt><dd>'+people[i].number+'</dd><dt>Email:</dt><dd>'+people[i].email+'</dd><dt>Qualification:</dt><dd>'+people[i].qualification+'</dd><dt>State:</dt><dd>'+people[i].state+'</dd><dt>Local Govt:</dt><dd>'+people[i].localgovt+'</dd><dt>Ward:</dt><dd>'+people[i].ward+'</dd></dl></div><div class="clearfix">...</div></div><div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">Close</button></div></div><!-- /.modal-content --></div><!-- /.modal-dialog --></div><!-- /.modal -->';
+			}
+			htmldata += '</div>'
+			divPeople.innerHTML = htmldata;
+		}
+		justPeople()
+	</script>
+</div>

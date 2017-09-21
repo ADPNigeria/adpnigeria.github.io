@@ -1,0 +1,40 @@
+{
+  "name": "adp",
+  "description": "The redesigned Action Democratic Website, Using Express and Vanila Javascript",
+  "main": "",
+  "authors": [
+    "ADP ICT Department"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "ADP",
+    "Action",
+    "Democratic",
+    "Party",
+    "Nigeria"
+  ],
+  "homepage": "https://github.com/adpnigeria/ADPNewDesign",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0",
+    "animate.css": "^3.5.2",
+    "slick": "*",
+    "fastclick": "^1.0.6",
+    "moment": "^2.18.1",
+    "cleave.js": "^1.0.1",
+    "intl-tel-input": "^12.0.3",
+    "blueimp-load-image": "^2.17.0",
+    "watermarkjs": "^2.0.0",
+    "blueimp-file-upload": "^9.19.1",
+    "bootpag": "^1.0.7",
+    "jsesc": "^2.5.1"
+  }
+}

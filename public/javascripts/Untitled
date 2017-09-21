@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title>My blog </title>
+</head>
+<body>
+this is a line of a text
+<p> this is a paragraph</p>
+<hr/>
+<!--this is a comment -->
+
+<p> this is another paraghraph <p/>
+<p>this is <br /> a line break </p>
+<p> this is a regular text <p>
+<p><b> bold text </p>
+<p><big> big text </p>
+<p><i> italic text </p>
+<p><small> small text </p>
+<p><strong> text </p>
+<p><sub> subscripted text </p>
+<p><sub> subscripted text </p>
+<p><ins> inserted text </p>
+<p><del> deleted text </p>
+<h1>this is heading 1 </p>
+<h2>this is heading 2</p>
+<h3>this is heading 3 </p>
+<h4>this is heading 4 </p>
+<h5>this is heading 5</p>
+<h6>this is heading 6 </p>
+<hr width='50 px'/>
+<hr width='50%'/>
+<p align = "center"> this is a text <br />
+<hr width='10%'align= "right"/> this is also a text
+</img src= "http://www.sololearn.com/images/tree.jpg alt= ""/>
+<img src ="tree.jpg"height= "50%" width = "50%" border="1px" alt=""/>
+<img src= "tree.jpg" height=50% width=50% alt=""/>
+<a href="http://www.sololearn.com"target="_blank" >learn playing</a>
+<ol>
+<li> red </li>
+<li> blue </li>
+<li> green </li>
+</ol>
+<: or ul -->
+<h1><span> my skills </span></h1>
+<ul>
+<li> html <li>
+<li> java script </li>
+<li> css </li>
+</ul>
+<table border="2">
+<tr>
+<td>red</td>
+<td>blue</td>
+<td>green</td>
+<td>black</td>
+</tr>
+<tr>
+<td><br>  / >< / ></td>
+<td>colspan=2><br /></td>
+</tr>
+</table>
+
+
+
+<body/>
+</html>

@@ -1,0 +1,55 @@
+{
+  "name": "adp",
+  "version": "1.2.0",
+  "description": "The redesigned Action Democratic Website, Using Express and Vanila Javascript",
+  "private": true,
+  "keywords": [
+    "ADP",
+    "Action Democratic Party",
+    "Nigeria"
+  ],
+  "repository": {
+    "url": "https://github.com/adpnigeri/adpnewdesign"
+  },
+  "author": "ADP ICT Department",
+  "contributors": [
+    {
+      "name": "Kizito ThankGod <kizi2nv>"
+    }
+  ],
+  "license": "ISC",
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "~1.17.1",
+    "bower": "^1.8.0",
+    "cookie-parser": "~1.4.3",
+    "country-list": "^1.1.0",
+    "crypto": "0.0.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "hbs": "~4.0.1",
+    "jquery": "^3.2.1",
+    "jsesc": "^2.5.1",
+    "md5": "^2.2.1",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "mongojs": "^2.4.0",
+    "mongoose": "^4.11.0",
+    "morgan": "^1.8.2",
+    "multer": "^1.3.0",
+    "node-code-generator": "^1.0.3",
+    "nodemailer": "^4.0.1",
+    "nodemailer-express-handlebars": "^2.0.0",
+    "passport": "^0.3.2",
+    "rasterizehtml": "^1.2.4",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
